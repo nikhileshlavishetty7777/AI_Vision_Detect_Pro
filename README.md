@@ -229,11 +229,17 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
 ## 👤 Author
 
-**Nikhilesh**
-Built as part of the **CodeAlpha Artificial Intelligence Internship**.
+**Nikhilesh Shetty**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github&logoColor=white)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](#)
+B.Tech Computer Science Student
+
+📧 Email: your_email@example.com
+
+🔗 LinkedIn:
+https://www.linkedin.com/in/nikhilesh-shetty-448bb8340/
+
+💻 GitHub:
+https://github.com/nikhileshlavishetty7777
 
 ---
 
