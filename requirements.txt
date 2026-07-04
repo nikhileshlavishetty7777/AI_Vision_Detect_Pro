@@ -1,0 +1,53 @@
+# =============================================================================
+# AI Vision Detect Pro — requirements.txt
+# Verified against PyPI for Python 3.14 (stable) compatibility.
+# Install with: pip install -r requirements.txt
+#
+# NOTE: torch/torchvision are pulled from PyTorch's official CPU-only wheel
+# index below to avoid bundling ~2-3 GB of unused NVIDIA CUDA packages. This
+# is PyTorch's documented method (https://pytorch.org/get-started/locally/).
+# Transparency: I could not fully verify this exact resolution path myself —
+# my sandbox blocks outbound access to download.pytorch.org, so `pip install`
+# here silently falls back to default PyPI's CUDA-bundled build instead of
+# erroring. Please confirm on your own machine that `pip install -r
+# requirements.txt` actually pulls a CPU-only torch wheel (check with
+# `pip show torch` — CPU builds have no `+cu*` version suffix and no
+# nvidia-* packages installed alongside them). If you have an NVIDIA GPU and
+# want CUDA acceleration instead, simply remove the --extra-index-url line.
+# =============================================================================
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# --- Core Deep Learning / CV ------------------------------------------------
+torch==2.12.1
+torchvision==0.27.1
+ultralytics==8.4.86
+
+# --- Computer Vision ---------------------------------------------------------
+opencv-python==4.13.0.92
+# NOTE: pinned to the 4.x line (not 5.0.0.93) because Ultralytics' image
+# pipeline and several downstream tools are validated against OpenCV 4.x;
+# 5.x is a fresh major bump with breaking API changes. Revisit this pin
+# once the ecosystem confirms 5.x compatibility.
+
+# --- Web App / UI -------------------------------------------------------------
+streamlit==1.58.0
+streamlit-webrtc==0.74.2   # enables real, non-blocking browser webcam capture
+
+# --- Data / Numerics -----------------------------------------------------------
+numpy==2.5.0
+pandas==3.0.3
+pillow==12.3.0
+
+# --- Visualization ---------------------------------------------------------
+plotly==6.8.0
+
+# --- Config / Utilities ------------------------------------------------------
+python-dotenv==1.2.2
+
+# --- Video output (H.264 via ffmpeg — required for in-browser playback) ----
+# cv2.VideoWriter's common 'mp4v' fourcc produces MPEG-4 Part 2, which most
+# browsers (Chrome included) refuse to play back inline. imageio's ffmpeg
+# backend is used instead in utils/detector.py to write real H.264, so
+# processed videos actually preview via st.video().
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
