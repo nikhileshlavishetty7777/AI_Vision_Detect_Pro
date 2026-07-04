@@ -141,31 +141,39 @@ The app will open automatically at `http://localhost:8501`. YOLOv8 weights are d
 Adjust the **model size**, **confidence threshold**, and **IoU threshold** at any time from the sidebar — changes apply to the next detection run.
 
 ---
-
-## 📸 Screenshots
-
 ## 📸 Screenshots
 
 ### 🏠 Home
 ![Home](screenshots/home.png)
 
 ### 🖼️ Image Detection
-![Image Detection](screenshots/image_detection.png)
+![Image1](screenshots/image_detection1.png)
+![Image2](screenshots/image_detection2.png)
+![Image3](screenshots/image_detection3.png)
 
 ### 🎬 Video Detection
-![Video Detection](screenshots/video_detection.png)
+![Video1](screenshots/video_detection1.png)
+![Video2](screenshots/video_detection2.png)
+![Video3](screenshots/video_detection3.png)
+![Video4](screenshots/video_detection4.png)
 
 ### 📷 Live Webcam
-![Live Webcam](screenshots/live_webcam.png)
+![Webcam1](screenshots/live_webcam.png)
+![Webcam2](screenshots/live_webcam2.png)
+![Webcam3](screenshots/live_webcam3.png)
+![Webcam4](screenshots/live_webcam4.png)
 
 ### 📊 Analytics
-![Analytics](screenshots/analytics.png)
+![Analytics1](screenshots/analytics.png)
+![Analytics2](screenshots/analytics2.png)
 
-### 🕘 Detection History
-![History](screenshots/history.png)
+### 🕘 History
+![History1](screenshots/history.png)
+![History2](screenshots/history2.png)
 
-### 🌗 Dark & Light Theme
-![Theme Toggle](screenshots/theme_toggle.png)
+### 🌗 Themes
+![Dark](screenshots/Dark.png)
+![Light](screenshots/Light.png)
 
 ---
 
